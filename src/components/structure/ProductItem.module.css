@@ -19,3 +19,8 @@
     height: 100%;
     object-fit: cover;
 }
+.price{
+    color: black;
+    font-style: italic;
+    padding: 2px 4px;
+}

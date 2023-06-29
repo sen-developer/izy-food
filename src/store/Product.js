@@ -52,7 +52,7 @@ export const PRODUCT_ITEMS = [
         sizeType:[
             {
                 size:"26sm",
-                price:7
+                price:6
             },
             {
                 size:"30sm",
@@ -60,7 +60,7 @@ export const PRODUCT_ITEMS = [
             },
             {
                 size:"40sm",
-                price:9
+                price:11
             }
         ],
         souse:false,
