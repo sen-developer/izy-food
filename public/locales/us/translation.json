@@ -1,0 +1,30 @@
+{
+  "navigation":{"options":"Options","videos":"Videos","about":"About","contact":"Contact"},
+  "homePage":{"header":"CODE YOUR BMW","context":"customize it according to your wishes and discover the hidden possibilities"},
+  "aboutUs":{"header":"About US","context":"The BMW Code Armenia team is dedicated to unlocking the full potential of BMW vehicles. Our team of experts has studied BMW cars extensively, discovering hidden features that make driving easier and more convenient. With the help of cutting-edge digital technologies, we are able to optimize various car control systems.While BMW offers many features, some may not be commonly known to fans of the brand, while others are blocked by default. However, our specialists have worked to adapt these features to the Armenian market and provide drivers with a more enhanced and enjoyable driving experience. The available options can be found in detail on our website's \"Available Options\" section.Imagine being able to enjoy videos while driving, having emergency blinkers turn on automatically in case of sudden braking, or controlling your car windows with a simple key press. These are just some of the possibilities available to BMW drivers who take advantage of our services. For more information on these options and more, please visit our website and get in touch with our professional team. We are committed to making your BMW experience even better."},
+  "contact": {"header": "Connect with us","context":"Got any questions? Our specialists are here to help. Simply reach out to us, and we'll get back to you promptly.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "text": "Text",
+      "button": "Send"
+    }},
+  "options":{
+    "context": [
+      {"id":"cont1","context":"Bluetooth Audio,Comfort closing","img": "bluethoothaudio","about": "In the presence of the Combox module, it will be possible to add the ability to listen to music through coding."},
+      {"id":"cont2","context":"Comfort closing","img": "comfortclose","about": "Remote control of windows. Moreover, it is possible to change the speed of remote control of windows"},
+      {"id":"cont3","context":"Condition default OFF","img": "condition","about": "The air conditioner will automatically turn off every time you start the car, so you don't have to turn it off manually every time."},
+      {"id":"cont4","context":"Digital speed view","img": "digspeed","about": "A speedometer will be added to the main dashboard of the car, which will show the speed in digital form and in kilometers"},
+      {"id":"cont5","context":"Disclaimer notification OFF","img": "disclaimeroff","about": "Allows you to delete the vehicle's warning texts"},
+      {"id":"cont6","context":"Folding mirrors from remote key","img": "folding","about": "In the presence of folding mirrors, they will automatically fold when blocking the car, and unfold when unlocking"},
+      {"id":"cont7","context":"Force Brake flashing","img": "forcebreak","about": "When the car brakes sharply, it will automatically activate the brake lights to warn the driver behind of the danger."},
+      {"id":"cont8","context":"Launch control","img": "launch","about": "The Launch system is an opportunity to give the car a sporty start."}
+    ],
+    "itemNotFound": {
+      "context": "Sorry",
+      "img": "itemnotfound",
+      "about": "Item Not Found"
+    },
+    "buttonText": "more"
+  }
+}

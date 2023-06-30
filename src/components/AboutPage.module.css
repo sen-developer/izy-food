@@ -1,0 +1,62 @@
+.aboutPageImg{
+    background-image: url("./img/bmwSmall/aboutPrimary.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.heading{
+    font-size: 24px;
+    color: white;
+}
+.context{
+    font-size: 16px;
+}
+.sec{
+    width: 100%;
+    padding: 10px;
+}
+.aboutLeft{
+    color: rgba(227, 226, 226, 0.90);
+    grid-area: gLeft;
+}
+.aboutRight{
+    grid-area: gRight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-areas: 'gLeft gLeft gRight';
+    gap: 50px;
+    height: 80%;
+    background-color: rgba(4, 4, 31, 0.73);
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.aboutImg{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+.aboutImgLogo{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 1200px) {
+    .aboutPageImg{
+        padding: 0;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .about{
+        padding: 20px;
+        grid-template-areas: 'gRight gRight gRight' 'gLeft gLeft gLeft';
+    }
+}

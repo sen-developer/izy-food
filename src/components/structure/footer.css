@@ -1,0 +1,119 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+footer{
+    background-color: black;
+}
+.primary-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    /*transition-duration: 1s;*/
+}
+.footer-info{
+    /*transition-duration: 1s;*/
+    color: white;
+    opacity: 0.7;
+    right: 50px;
+    bottom: 25%;
+    position: absolute;
+    cursor: default;
+}
+.footer-info:hover{
+    opacity: 1;
+}
+.social-block{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+
+}
+
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-facebook
+{
+    background-color: /*#3b5998;*/#ac1f4b;
+}
+.btn-facebook:hover
+{
+    background-color: #4c70ba;
+}
+
+.btn-instagram
+{
+    background-color: /*#F77737;*/#ac1f4b;
+}
+.btn-instagram:hover
+{
+    background-color: #833AB4;
+}
+
+
+.btn-youtube
+{
+    background-color: /*#e52d27;*/#ac1f4b;
+}
+.btn-youtube:hover
+{
+    background-color: #ea5955;
+}
+.btn-email
+{
+    background-color: /*#44c456;*/#ac1f4b;
+}
+.btn-email:hover
+{
+    background-color: #6bd079;
+}
+.f{
+    margin-top: 10px;
+}
+.i-center{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    #span-footer{
+        display: none;
+    }
+}

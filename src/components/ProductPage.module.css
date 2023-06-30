@@ -1,0 +1,54 @@
+.productBackgroundImg{
+    background-image: url("./img/bmwSmall/background2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.productInfoGrid{
+    display: grid;
+    padding: 10px;
+    grid-template-areas: "infoBlock infoBlock infoBlock imgBlock imgBlock";
+    background-color: rgba(143, 141, 141, 0.33);
+}
+.img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+.infoBlock{
+    grid-area: infoBlock;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.infoBlock h3{
+    font-size: 32px;
+    color: white;
+}
+
+.infoBlock p{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+.imgBlock{
+    grid-area: imgBlock;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@media only screen and (max-width: 1200px) {
+    .productInfoGrid{
+        grid-template-areas: "imgBlock" "infoBlock";
+    }
+    .productBackgroundImg{
+        padding: 20% 5% 5%;
+        padding-bottom: 5%;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,110 @@
+.contactPageImg{
+    background-image: url("./img/bmwSmall/connectPrimary.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    height: 500px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+.forMore{
+    padding: 3%;
+    background-color: rgba(4, 4, 31, 0.73);
+    color: rgba(227, 226, 226, 0.90);
+}
+.forMore p{
+    font-size: 16px;
+}
+.forMore > ul{
+    padding-left: 5%;
+    padding-top: 5%;
+    list-style-type:none;
+}
+.forMore>ul>li{
+    padding: 5px 0;
+}
+.cont-form{
+    /*width: 50%;*/
+    /*height: 100%;*/
+    padding: 3%;
+    background-color: rgba(65, 65, 82, 0.73);
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.cont-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.myForm{
+    border:none;
+    padding-left: 10px;
+    transition-duration: 1s;
+    background-color: rgba(255, 255, 255, 0.79);
+    width:70%;
+    height: 40px;
+}
+.myForm:hover{
+    transition-duration: 1s;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.79);
+}
+textarea:hover{
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 1);
+}
+.myForm:nth-child(2){
+    width: 250px;
+}
+#btn-pro{
+    background-color: #b4b2b2;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: none;
+    transition-duration: 1s;
+    cursor: pointer;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+#btn-pro:hover{
+    transition-duration: 1s;
+    background-color: rgb(61, 61, 61);
+}
+.name_block,.message_block,.sendMessage_block{
+    padding: 20px 0;
+}
+.notValid{
+    background-color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contactPageImg{
+        height: auto;
+        padding: 2% 2% 2% 2%;
+        align-items: center;
+    }
+    #contact{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 90%;
+    }
+    .myForm{
+        width: 50%;
+    }
+}
