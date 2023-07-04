@@ -8,6 +8,20 @@
     align-items: center;
     padding: 0 50px;
 }
+.addAnimation{
+    position: fixed;
+    right: 0;
+    padding: 4px 8px;
+    background-color: rgba(0, 128, 0, 0.62);
+    color: white;
+    text-align: end;
+    top: 85px;
+}
+.navGroup{
+    display: flex;
+    align-items: center;
+
+}
 .navGroup a{
     text-decoration: none;
     color: black;
@@ -18,4 +32,46 @@
 }
 .navGroup a:hover{
     background-color: rgba(225, 234, 246, 0.35);
+}
+#cartView{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+}
+#cartText{
+    padding: 0 4px;
+}
+#cartText span:first-child{
+    color: rgba(100, 149, 237, 0.87);
+    font-weight: 500!important;
+    font-size: 20px;
+}
+#cartText span:nth-child(2){
+    color: rgba(117, 117, 40, 0.41);
+    font-weight: 800!important;
+    font-size: 16px;
+}
+#cartText span:nth-child(3){
+    color: rgba(45, 117, 40, 0.41);
+    font-weight: 700!important;
+    font-size: 18px;
+}
+#cartText span:last-child{
+    color: rgb(91, 18, 18);
+    font-weight: 600!important;
+    font-size: 22px;
+}
+#items_count{
+    background-color: #4f4f4f;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
 }

@@ -1,11 +1,26 @@
-import styles from "./PopularOrders.module.css"
+import styles from "./productGlobal.module.css"
 import ProductItem from "./ProductItem";
-const PopularOrders = ()=>{
+import {PRODUCT_ITEMS} from "../../store/Product";
 
-    return(
-        <section className={styles.popular}>
-            <h1>There is Popular Orderss</h1>
-        </section>
+const PopularOrders = () => {
+
+    const food = PRODUCT_ITEMS.food.map(item => {
+            return item.isPopular === true ? <ProductItem key={item.id} get={item}/> : ''
+        }
+    )
+    const drink = PRODUCT_ITEMS.drink.map(item => {
+            return item.isPopular === true ? <ProductItem key={item.id} get={item}/> : ''
+        }
+    )
+    const combo = PRODUCT_ITEMS.combo.map(item => {
+            return item.isPopular === true ? <ProductItem key={item.id} get={item}/> : ''
+        }
+    )
+
+    return (
+            <section className={styles.productGlobal}>
+                {[...food,...drink,...combo]}
+            </section>
     )
 }
 export default PopularOrders;

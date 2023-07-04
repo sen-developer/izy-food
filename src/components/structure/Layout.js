@@ -1,29 +1,17 @@
-import "./Layout.css"
-import {NavLink, Outlet} from "react-router-dom";
-import Logo from "../UI/Logo";
+import {Outlet} from "react-router-dom";
+import Header from "./Header"
 import Footer from "./Footer";
-import am from "../img/am.png"
-import us from "../img/ukus.png"
-
-
-const Layout = (props) => {
-
+import CartModal from "./CartModal";
+import {useSelector} from "react-redux";
+const Layout = () => {
+    const isModalActive = useSelector(state => state.product.isModalActive);
     return (
         <>
-            <header className='header'>
-                <Logo lang = {props.lang}/>
-                <div id='navGroup'>
-                    <NavLink to={'options?lang=' + props.lang}>{props.nav.options}</NavLink>
-                    <NavLink to={'videos?lang=' + props.lang}>{props.nav.videos}</NavLink>
-                    <NavLink to={'about?lang=' + props.lang}>{props.nav.about}</NavLink>
-                    <NavLink to={'contact?lang=' + props.lang}>{props.nav.contact}</NavLink>
-                    <button onClick={props.changeLanguage} className='langBtn'><img src={props.islangUs?am:us} className='langImg' alt=""/></button>
-                </div>
-            </header>
-                <Outlet lang = {props.lang}/>
+            <Header/>
+            <Outlet/>
+            {isModalActive && <CartModal/>}
             <Footer/>
         </>
     )
 }
-
 export default Layout;

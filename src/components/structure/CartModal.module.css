@@ -1,0 +1,40 @@
+.backDrop{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(79, 79, 79, 0.6);
+    z-index: 99998;
+}
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    background-color: yellow;
+    z-index: 99999;
+}
+.itemForm{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+    /*text-align: center;*/
+}
+.itemForm p{
+    padding-left: 10px;
+}
+.countInput{
+    width: 60px;
+}
+.pt30{
+    padding-top: 30px;
+}
+.price{
+
+}

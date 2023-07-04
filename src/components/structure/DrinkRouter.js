@@ -1,10 +1,8 @@
 import styles from "./productGlobal.module.css"
 import ProductItem from "./ProductItem";
 import {PRODUCT_ITEMS} from "../../store/Product"
-
-const PizzaRouter = () => {
-
-    const items = PRODUCT_ITEMS.food.map(item => {
+const DrinkRouter = ()=>{
+    const items = PRODUCT_ITEMS.drink.map(item => {
             return <ProductItem key={item.id} get={item}/>
         }
     )
@@ -14,4 +12,4 @@ const PizzaRouter = () => {
         </section>
     )
 }
-export default PizzaRouter;
+export default DrinkRouter;

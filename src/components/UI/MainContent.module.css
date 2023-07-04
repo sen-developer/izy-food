@@ -1,4 +1,6 @@
 .mainContent{
+    background-color: yellow;
+    min-height: 94vh;
     padding-top: 80px;
-    height: 94vh;
+    overflow: auto;
 }
